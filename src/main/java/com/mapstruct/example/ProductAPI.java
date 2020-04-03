@@ -67,7 +67,7 @@ public class ProductAPI {
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable Long id) {
         productService.deleteById(id);
-
+System.out.println(id);
         return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 }
