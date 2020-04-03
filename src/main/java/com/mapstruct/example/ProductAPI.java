@@ -24,7 +24,9 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductAPI {
-	
+	static {
+		System.out.println("Pawan");
+	}
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	
