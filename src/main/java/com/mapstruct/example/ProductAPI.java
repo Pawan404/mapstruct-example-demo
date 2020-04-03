@@ -37,6 +37,7 @@ public class ProductAPI {
 
     @GetMapping
     public ResponseEntity<List<ProductDTO>> findAll() {
+    	System.out.println("I am here boss");
         return ResponseEntity.ok(productMapper.toProductDTOs(productService.findAll()));
     }
 
